@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feliz Cumpleaños Jaslyn</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <audio id="background-music" src="1.mp3" loop></audio>
+  <!-- partial:index.partial.html -->
+  <iframe width="0" height="0" src="https://www.youtube.com/embed/N55vD0-i1Dw?rel=0&amp;&autoplay=1;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+  <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:100,300' rel='stylesheet' type='text/css'>
+  <div class="cover super-centered-container">
+    <canvas id="can">Busqueda</canvas>
+    <div class="overlay-static">    
+      <div class="inline-blocks">
+        <h2 class="twenty-one block">Jaslyn</h2>
+      </div>
+      <h1 class="bday">🥳 Feliz Cumpleaños <b>Jaslyn</b> 🥳</h1>
+      <section>
+        <button class="reg">Presionar aquí</button>
+      </section>
+      <div class="pop">
+        <span><span>✖</span></span>
+        <div class="carousel">
+          <div class="card">
+            <h2>25 añitos ya</h2>
+            <img src="https://scontent.fsal2-2.fna.fbcdn.net/v/t39.30808-6/416109334_2798460116962917_3867804954057815169_n.jpg?stp=cp6_dst-jpg&_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=JJQUjLoGyC0Q7kNvgGsuutN&_nc_ht=scontent.fsal2-2.fna&oh=00_AYBiM-EY3zvfcuHgyB4PgbdqWLF1m8cI0Ah_VLACcmjzlw&oe=66A7B52A" alt="Imagen 1">
+            <p>Un año más que Dios le a regalado. Espero que esté lleno de bendiciones y alegrías. ya tiene la cora jaja</p>
+          </div>
+          <div class="card">
+            <h2>25 años de ser fotogenica</h2>
+            <img src="https://scontent.fsal11-1.fna.fbcdn.net/v/t39.30808-6/321288517_2317350595138429_3141367982150407544_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=UtOwGOVxALkQ7kNvgE2o-27&_nc_ht=scontent.fsal11-1.fna&oh=00_AYDk2D79MmpYF5qH0DTeCiJsutJobNf600foFp6cH64zNw&oe=66A79298" alt="Imagen 2">
+            <p>Espero que siga tomandose muchas fotos que le permitan tener recuerdos bonitos y entrañables.</p>
+          </div>
+          <div class="card">
+            <h2>Amor y servicio a Dios</h2>
+            <img src="https://scontent.fsal2-2.fna.fbcdn.net/v/t39.30808-6/278526469_2320955954713338_4352577491512522517_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_ohc=eUPuwAuKYVoQ7kNvgHUlCLZ&_nc_ht=scontent.fsal2-2.fna&oh=00_AYB6hHRtrYZwpFmy8TGUwxXNURE_ICLCLj9Pph24RsE5MA&oe=66A79552" alt="Imagen 3">
+            <p>Dios nos regaló hace 25 años a una gran mujer. Espero que siga sirviendo con amor y devoción a Dios.</p>
+          </div>
+          <div class="card">
+            <h2>Una pequeña vista al pasado</h2>
+            <img src="https://scontent.fsal2-1.fna.fbcdn.net/v/t1.18169-9/1012021_315225188619768_1348992632_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=b895b5&_nc_ohc=n4IOsczgFHUQ7kNvgEXL9yJ&_nc_ht=scontent.fsal2-1.fna&oh=00_AYBKVl8JKBsFZOu3RU1YeH2ZUiKtm4HEYYyqYe9_l6zx5w&oe=66C95A29" alt="Imagen 4">
+            <p>Siempre es importante recordar un poco del pasado y apreciar lo vivido encontre otra pero capas me mata si la pongo jajaj.</p>
+          </div>
+          <div class="card">
+            <h2>Hoy es una celebración especial</h2>
+            <img src="1.png" alt="Imagen 5">
+            <p>Que este día esté lleno de amor, alegría y momentos especiales.</p>
+          </div>
+          <!-- Puedes añadir más tarjetas aquí -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <button id="play-audio" onclick="playAudio()">Reproducir Música</button>
+  <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+    function playAudio() {
+      var audio = document.getElementById('background-music');
+      audio.play();
+      document.getElementById('play-audio').style.display = 'none';
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,324 @@
+.inline-blocks > .block {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.image {
+  height: 200px;
+  margin-top: 75px;
+  margin-left: 80px;
+}
+
+.twenty-one {
+  font-size: 240px;
+  font-family: 'Josefin Sans';
+  font-weight: 100;
+  line-height: 180px;
+  color: #fff;
+  margin: 40px 0;
+}
+
+.bday {
+  font-size: 24px;
+  color: #fff;
+  font-family: 'Josefin Sans';
+  font-weight: 300;
+  text-align: center;
+}
+
+.cover {
+  background: rgba(0, 0, 0, 0.82);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+#can {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+.super-centered-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background: #131313;
+  overflow: hidden;
+}
+
+a {
+  color: skyblue;
+  text-decoration: none;
+}
+
+.overlay-static {
+  position: relative;
+  z-index: 1000;
+  margin-bottom: 100px;
+}
+
+body {
+  background: url('https://s5.postimg.org/fr0gozr1z/Mary_collage.jpg');
+  background-position: center center;
+  background-size: contain;
+}
+
+section {
+  text-align: center;
+}
+
+section > button {
+  background: black;
+  border: 4px solid #fff;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 200px;
+  font-size: 16.996px;
+  line-height: 20px;
+  padding: 12px 18px 13px;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+section > button:hover {
+  opacity: 0.8;
+  transition: all 0.3s ease-in-out;
+}
+
+.pop {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  background: #ffffff;
+  border-radius: 6px;
+  outline: 10px solid rgba(0, 0, 0, 0.1);
+  background-color: black;
+  border: 4px solid #fff;
+  overflow: hidden;
+}
+
+.pop > span {
+  cursor: pointer;
+  display: flex;
+  position: absolute;
+  top: 4%;
+  right: 2%;
+  border-radius: 100px;
+  background: black;
+  color: #ffffff;
+  padding: 6px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #fff;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card h2, .card p {
+  margin: 10px 0;
+}
+
+.card img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+}
+
+.carousel {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel .slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 10px;
+}
+
+/* Media queries for different iPhones */
+
+/* iPhone SE */
+@media only screen and (max-width: 320px) {
+  .twenty-one {
+    font-size: 60px;
+  }
+  .bday {
+    font-size: 18px;
+  }
+  section > button {
+    width: 150px;
+    font-size: 14px;
+  }
+  .card {
+    width: 100%;
+  }
+}
+
+/* iPhone 6/7/8 */
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+  .twenty-one {
+    font-size: 80px;
+  }
+  .bday {
+    font-size: 20px;
+  }
+  section > button {
+    width: 170px;
+    font-size: 15px;
+  }
+  .card {
+    width: 100%;
+  }
+}
+
+/* iPhone 6+/7+/8+ */
+@media only screen and (min-width: 376px) and (max-width: 414px) {
+  .twenty-one {
+    font-size: 100px;
+  }
+  .bday {
+    font-size: 22px;
+  }
+  section > button {
+    width: 180px;
+    font-size: 16px;
+  }
+  .card {
+    width: 100%;
+  }
+}
+
+/* iPhone X/XS/11 Pro */
+@media only screen and (min-width: 415px) and (max-width: 812px) {
+  .twenty-one {
+    font-size: 120px;
+  }
+  .bday {
+    font-size: 24px;
+  }
+  section > button {
+    width: 190px;
+    font-size: 17px;
+  }
+  .card {
+    width: 100%;
+  }
+}
+
+/* iPhone XR/XS Max/11/11 Pro Max */
+@media only screen and (min-width: 813px) and (max-width: 896px) {
+  .twenty-one {
+    font-size: 140px;
+  }
+  .bday {
+    font-size: 26px;
+  }
+  section > button {
+    width: 200px;
+    font-size: 18px;
+  }
+  .card {
+    width: 100%;
+  }
+}
+
+/* iPhone 12 Mini */
+@media only screen and (min-width: 897px) and (max-width: 926px) {
+  .twenty-one {
+    font-size: 160px;
+  }
+  .bday {
+    font-size: 28px;
+  }
+  section > button {
+    width: 210px;
+    font-size: 19px;
+  }
+  .card {
+    width: 100%;
+  }
+}
+
+/* iPhone 12/12 Pro/13/13 Pro */
+@media only screen and (min-width: 927px) and (max-width: 1170px) {
+  .twenty-one {
+    font-size: 180px;
+  }
+  .bday {
+    font-size: 30px;
+  }
+  section > button {
+    width: 220px;
+    font-size: 20px;
+  }
+  .card {
+    width: 33.33%;
+  }
+}
+
+/* iPhone 12 Pro Max/13 Pro Max */
+@media only screen and (min-width: 1171px) and (max-width: 1284px) {
+  .twenty-one {
+    font-size: 200px;
+  }
+  .bday {
+    font-size: 32px;
+  }
+  section > button {
+    width: 230px;
+    font-size: 21px;
+  }
+  .card {
+    width: 33.33%;
+  }
+}
+
+/* iPhone 14/14 Plus/14 Pro/14 Pro Max */
+@media only screen and (min-width: 1285px) {
+  .twenty-one {
+    font-size: 220px;
+  }
+  .bday {
+    font-size: 34px;
+  }
+  section > button {
+    width: 240px;
+    font-size: 22px;
+  }
+  .card {
+    width: 33.33%;
+  }
+}
